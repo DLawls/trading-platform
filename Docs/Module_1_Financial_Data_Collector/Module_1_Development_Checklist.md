@@ -12,19 +12,19 @@
 - [x] All four ingestion scripts scaffolded with config loading and placeholders
 - [x] OHLCV ingestion implemented and tested with yfinance (Parquet output)
 - [x] Macro ingestion implemented and tested with fredapi (Parquet output, valid FRED series IDs)
-- [x] Fundamentals ingestion implemented and tested with yfinance (Parquet output)
+- [x] Fundamentals ingestion implemented and tested with yfinance (Parquet output, schema validation, debug prints removed)
 - [x] Events ingestion implemented and tested with yfinance (Parquet output, ETF handling)
-- [x] Schema validation implemented and tested for OHLCV and macro scripts
+- [x] Schema validation implemented and tested for OHLCV, macro, and fundamentals scripts
+- [x] Changes committed and pushed to GitHub
 
 ## 🚧 To Do
-- [ ] Add schema validation to fundamentals and events scripts
+- [ ] Add schema validation to events script
 - [ ] Add logging and error handling
 - [ ] Add unit tests for each ingestion module
 - [ ] Add integration test for end-to-end ingestion
 - [ ] Document usage and example runs in README
 - [ ] (Optional) Add Dockerfile logic for running jobs
 - [ ] (Optional) Add Prometheus metrics/logging hooks
-- [ ] Commit and push to GitHub
 
 ---
 
