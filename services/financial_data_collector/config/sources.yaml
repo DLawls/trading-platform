@@ -1,0 +1,16 @@
+# sources.yaml
+# API keys, endpoints, and provider configs for data ingestion
+
+yahoo:
+  provider: yfinance
+  notes: 'No API key required for yfinance.'
+
+fred:
+  provider: fredapi
+  api_key: '2fa84c6323a0b906290a44ce5cf2c457'
+  endpoint: 'https://fred.stlouisfed.org/'
+
+abs:
+  provider: abs
+  endpoint: 'https://api.data.abs.gov.au/'
+  api_key: 'YOUR_ABS_API_KEY'

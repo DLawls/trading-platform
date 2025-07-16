@@ -1,0 +1,40 @@
+# data_requirements.yaml
+# Specify which assets, indicators, and fields to ingest
+
+ohlcv:
+  tickers:
+    - BHP.AX
+    - CBA.AX
+    - WES.AX
+    - IOZ.AX
+  intervals:
+    - daily
+    - hourly
+
+macro:
+  indicators:
+    - CPALTT01AUQ657N    # CPI: Total, quarterly index
+    - LRHUTTTTAUM156S    # Monthly Unemployment Rate
+    - IR3TIB01AUM156N    # 3‑Month Interbank Rate (proxy for cash rate)
+
+fundamentals:
+  tickers:
+    - BHP.AX
+    - CBA.AX
+  fields:
+    - revenue
+    - eps
+    - pe_ratio
+
+events:
+  earnings:
+    tickers:
+      - BHP.AX
+      - CBA.AX
+  dividends:
+    tickers:
+      - BHP.AX
+      - IOZ.AX
+  central_bank:
+    sources:
+      - RBA
