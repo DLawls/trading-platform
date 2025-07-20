@@ -26,15 +26,22 @@ collectors:
     name: "FRED Economic"
     icon: "🏛️"
     status: "active" 
-    description: "US Federal Reserve economic data"
+    description: "Enhanced Federal Reserve economic data collection"
     data_types: ["economic"]
+    method: "api"
+    indicators: 15
+    categories: ["inflation", "labour", "monetary", "growth", "trade", "fx"]
+    coverage: "Australian (10) + US (4) + Global (1)"
+    features: ["enhanced_metadata", "quality_monitoring", "correlation_analysis"]
     
   abs_australian:
     name: "ABS Australian"
     icon: "🇦🇺"
-    status: "configured"
-    description: "Australian Bureau of Statistics"
+    status: "active"
+    description: "Australian Bureau of Statistics - Key Economic Indicators"
     data_types: ["economic"]
+    method: "web_scraping"
+    indicators: 36
     
   alpaca_alternative:
     name: "Alpaca Premium"

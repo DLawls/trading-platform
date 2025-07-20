@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ABS Economic Data - Web Scraped Key Indicators",
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "string",
+      "description": "Economic indicator category (e.g., National accounts, International accounts)"
+    },
+    "indicator": {
+      "type": "string", 
+      "description": "Full indicator name and description"
+    },
+    "indicator_link": {
+      "type": "string",
+      "description": "URL link to detailed ABS indicator page"
+    },
+    "period": {
+      "type": "string",
+      "description": "Time period (e.g., Mar Qtr 2025, May 2025)"
+    },
+    "unit": {
+      "type": "string",
+      "description": "Units of measurement (e.g., $m, %, '000)"
+    },
+    "value": {
+      "type": ["number", "null"],
+      "description": "Numeric value of the economic indicator"
+    },
+    "value_raw": {
+      "type": "string",
+      "description": "Original text value as scraped from the webpage"
+    },
+    "change_previous_period": {
+      "type": "string",
+      "description": "Change from previous period (e.g., 0.2%, -1.5%)"
+    },
+    "change_year_on_year": {
+      "type": "string", 
+      "description": "Year-on-year change (e.g., 1.3%, -2.1%)"
+    },
+    "datetime": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Parsed ISO datetime from period text"
+    },
+    "scrape_date": {
+      "type": "string",
+      "format": "date-time", 
+      "description": "Timestamp when data was scraped"
+    },
+    "source": {
+      "type": "string",
+      "description": "Data source identifier (ABS)"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL of the scraped webpage"
+    },
+    "dataset_id": {
+      "type": ["string", "null"],
+      "description": "Generated dataset identifier from indicator name"
+    },
+    "frequency": {
+      "type": ["string", "null"],
+      "description": "Data frequency (monthly, quarterly, annual)"
+    }
+  },
+  "required": [
+    "category",
+    "indicator", 
+    "period",
+    "unit",
+    "value",
+    "scrape_date",
+    "source",
+    "source_url"
+  ],
+  "additionalProperties": false
+} 

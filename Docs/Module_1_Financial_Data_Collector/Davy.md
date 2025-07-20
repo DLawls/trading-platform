@@ -1,5 +1,0 @@
-- Need to finish other collectors, 
-- Research and add more metrics from each collector
-- Need to get dashboard working
-- Check Yahoo Data(Some was not working - fundamentals, events)
-- add rigorous financial event schedule

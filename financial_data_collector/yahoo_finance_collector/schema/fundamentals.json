@@ -5,9 +5,12 @@
   "properties": {
     "ticker": {"type": "string"},
     "date": {"type": "string", "format": "date"},
-    "revenue": {"type": "number"},
-    "eps": {"type": "number"},
-    "pe_ratio": {"type": "number"}
+    "revenue": {"type": ["number", "null"]},
+    "net_income": {"type": ["number", "null"]},
+    "eps": {"type": ["number", "null"]},
+    "pe_ratio": {"type": ["number", "null"]},
+    "total_assets": {"type": ["number", "null"]},
+    "debt_to_equity": {"type": ["number", "null"]}
   },
-  "required": ["ticker", "date", "revenue", "eps", "pe_ratio"]
+  "required": ["ticker", "date"]
 } 

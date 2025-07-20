@@ -1,11 +1,35 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "FRED Economic Data",
+  "title": "Enhanced FRED Economic Data",
+  "description": "Comprehensive schema for Federal Reserve Economic Data with enhanced metadata and quality tracking",
   "type": "object",
   "properties": {
     "indicator": {
       "type": "string",
-      "description": "FRED indicator code (e.g., CPALTT01AUQ657N)"
+      "description": "FRED indicator code (e.g., CPALTT01AUQ657N)",
+      "pattern": "^[A-Z0-9]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable indicator name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the economic indicator"
+    },
+    "category": {
+      "type": "string",
+      "description": "Economic indicator category",
+      "enum": [
+        "inflation", "labour", "monetary", "growth", "trade",
+        "us_inflation", "us_monetary", "us_labour", "us_growth", 
+        "fx", "general"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "description": "Collection priority level",
+      "enum": ["high", "medium", "low"]
     },
     "datetime": {
       "type": "string",
@@ -16,20 +40,38 @@
       "type": "number",
       "description": "Economic indicator value"
     },
+    "units": {
+      "type": "string",
+      "description": "Units of measurement (e.g., Percent, Index, Billions of Dollars)"
+    },
+    "frequency": {
+      "type": "string",
+      "description": "Data frequency",
+      "enum": [
+        "Daily", "Weekly", "Monthly", "Quarterly", "Annual",
+        "daily", "weekly", "monthly", "quarterly", "annual", 
+        "Unknown"
+      ]
+    },
     "source": {
       "type": "string",
       "enum": ["FRED"],
       "description": "Data source identifier"
     },
-    "units": {
+    "collection_date": {
       "type": "string",
-      "description": "Units of measurement (e.g., Percent, Index)"
-    },
-    "frequency": {
-      "type": "string",
-      "description": "Data frequency (e.g., Monthly, Quarterly, Annual)"
+      "format": "date-time",
+      "description": "When this data was collected"
     }
   },
-  "required": ["indicator", "datetime", "value", "source"],
+  "required": [
+    "indicator", 
+    "name", 
+    "description", 
+    "category", 
+    "datetime", 
+    "value", 
+    "source"
+  ],
   "additionalProperties": false
 } 

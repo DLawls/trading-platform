@@ -47,7 +47,6 @@ ohlcv:
     - JHX.AX   # James Hardie Industries Plc - $23.55B
     - NST.AX   # Northern Star Resources Ltd - $23.34B
     - SUN.AX   # Suncorp Group Limited - $22.26B
-    - VAS.AX   # Vanguard Australian Shares Index ETF - $20.86B
     - URW.AX   # Unibail-Rodamco-Westfield - $20.45B
     - ORG.AX   # Origin Energy Limited - $20.44B
     - SGH.AX   # SGH Limited - $20.38B
@@ -120,7 +119,6 @@ fundamentals:
     - JHX.AX   # James Hardie Industries Plc
     - NST.AX   # Northern Star Resources Ltd
     - SUN.AX   # Suncorp Group Limited
-    - VAS.AX   # Vanguard Australian Shares Index ETF
     - URW.AX   # Unibail-Rodamco-Westfield
     - ORG.AX   # Origin Energy Limited
     - SGH.AX   # SGH Limited
@@ -193,7 +191,6 @@ events:
       - JHX.AX   # James Hardie Industries Plc
       - NST.AX   # Northern Star Resources Ltd
       - SUN.AX   # Suncorp Group Limited
-      - VAS.AX   # Vanguard Australian Shares Index ETF
       - URW.AX   # Unibail-Rodamco-Westfield
       - ORG.AX   # Origin Energy Limited
       - SGH.AX   # SGH Limited
@@ -257,7 +254,6 @@ events:
       - JHX.AX   # James Hardie Industries Plc
       - NST.AX   # Northern Star Resources Ltd
       - SUN.AX   # Suncorp Group Limited
-      - VAS.AX   # Vanguard Australian Shares Index ETF
       - URW.AX   # Unibail-Rodamco-Westfield
       - ORG.AX   # Origin Energy Limited
       - SGH.AX   # SGH Limited
