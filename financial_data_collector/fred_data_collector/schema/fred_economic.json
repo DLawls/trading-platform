@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FRED Economic Data",
+  "type": "object",
+  "properties": {
+    "indicator": {
+      "type": "string",
+      "description": "FRED indicator code (e.g., CPALTT01AUQ657N)"
+    },
+    "datetime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO format timestamp"
+    },
+    "value": {
+      "type": "number",
+      "description": "Economic indicator value"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["FRED"],
+      "description": "Data source identifier"
+    },
+    "units": {
+      "type": "string",
+      "description": "Units of measurement (e.g., Percent, Index)"
+    },
+    "frequency": {
+      "type": "string",
+      "description": "Data frequency (e.g., Monthly, Quarterly, Annual)"
+    }
+  },
+  "required": ["indicator", "datetime", "value", "source"],
+  "additionalProperties": false
+} 

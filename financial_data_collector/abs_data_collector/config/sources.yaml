@@ -1,0 +1,20 @@
+# sources.yaml
+# Australian Bureau of Statistics API Configuration
+
+abs:
+  provider: abs_api
+  api_key: 'YOUR_ABS_API_KEY'    # Replace with actual API key when available
+  endpoint: 'https://api.data.abs.gov.au/'
+  rate_limit: 60         # Requests per minute (estimated)
+  timeout: 45            # Request timeout in seconds
+  retry_attempts: 3      # Number of retry attempts on failure
+  
+  metadata:
+    description: "Australian Bureau of Statistics API"
+    documentation: "https://api.data.abs.gov.au/docs/"
+    data_coverage: "Official Australian economic and demographic statistics"
+    update_frequency: "Varies by dataset (monthly/quarterly/annual)"
+    
+  # Note: ABS API key configuration required
+  # Visit: https://api.data.abs.gov.au/ for API access
+  status: "configured_not_active" 

@@ -1,0 +1,16 @@
+# sources.yaml
+# FRED Data Collector API Configuration
+
+fred:
+  provider: fredapi
+  api_key: '2fa84c6323a0b906290a44ce5cf2c457'
+  endpoint: 'https://fred.stlouisfed.org/'
+  rate_limit: 120      # Requests per minute
+  timeout: 30          # Request timeout in seconds
+  retry_attempts: 3    # Number of retry attempts on failure
+  
+  metadata:
+    description: "Federal Reserve Economic Data API"
+    documentation: "https://fred.stlouisfed.org/docs/api/"
+    data_coverage: "US and international economic indicators"
+    update_frequency: "Daily" 

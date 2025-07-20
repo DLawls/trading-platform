@@ -1,0 +1,39 @@
+# abs_requirements.yaml
+# Australian Bureau of Statistics Data Collection Configuration
+# ABS API for official Australian economic and demographic data
+
+abs:
+  indicators:
+    # Key Economic Indicators
+    # - 6401.0    # Consumer Price Index, Australia
+    # - 6202.0    # Labour Force, Australia  
+    # - 5206.0    # Australian National Accounts: National Income, Expenditure and Product
+    # - 8731.0    # Building Approvals, Australia
+    # - 6345.0    # Wage Price Index, Australia
+    
+    # Population and Demographics
+    # - 3101.0    # Australian Demographic Statistics
+    # - 3218.0    # Regional Population Growth, Australia
+    
+    # Business and Trade
+    # - 5368.0    # International Trade in Goods and Services, Australia
+    # - 8165.0    # Counts of Australian Businesses, including Entries and Exits
+    
+  collection:
+    frequency: monthly    # How often to collect
+    history: 5y          # Collect 5 years of history
+    format: parquet      # Storage format
+    
+  quality:
+    min_records: 5       # Minimum records required
+    max_null_pct: 10     # Maximum null percentage allowed
+    
+  metadata:
+    description: "Australian Bureau of Statistics official data collection"
+    source: "https://api.data.abs.gov.au/"
+    update_frequency: "Monthly/Quarterly depending on indicator"
+    api_docs: "https://api.data.abs.gov.au/docs/"
+    
+  # Note: Currently configured but not implemented
+  # Uncomment indicators above when ready to activate ABS collection
+  status: "configured_not_active" 

@@ -1,0 +1,31 @@
+# fred_requirements.yaml
+# FRED Economic Data Collection Configuration
+# Federal Reserve Economic Data API
+
+fred:
+  indicators:
+    # Australian Economic Indicators from FRED
+    - CPALTT01AUQ657N    # Australia CPI: Total, All Items for Australia, Quarterly, NSA
+    - LRHUTTTTAUM156S    # Unemployment Rate: Total: All Persons for Australia, Monthly, SA
+    - IR3TIB01AUM156N    # Immediate Rates: 3 Month or 90 day Rates and Yields: Interbank Rates for Australia, Monthly, NSA
+    
+    # Additional US Economic Context (optional)
+    # - GDP               # US Gross Domestic Product
+    # - UNRATE            # US Unemployment Rate
+    # - FEDFUNDS          # US Federal Funds Rate
+    # - CPIAUCSL          # US Consumer Price Index
+    
+  collection:
+    frequency: daily      # How often to collect
+    history: max         # Collect all available history
+    format: parquet      # Storage format
+    
+  quality:
+    min_records: 10      # Minimum records required
+    max_null_pct: 5      # Maximum null percentage allowed
+    
+  metadata:
+    description: "Federal Reserve Economic Data collection for Australian and US economic indicators"
+    source: "https://fred.stlouisfed.org/"
+    update_frequency: "Daily"
+    api_docs: "https://fred.stlouisfed.org/docs/api/" 

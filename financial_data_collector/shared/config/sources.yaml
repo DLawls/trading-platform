@@ -1,0 +1,80 @@
+# sources.yaml
+# Consolidated API Configuration for All Financial Data Collectors
+# This file contains all API keys, endpoints, and provider configurations
+
+# Yahoo Finance (Free)
+yahoo:
+  provider: yfinance
+  notes: 'No API key required for yfinance library'
+  rate_limit: 2000       # Daily requests (unofficial limit)
+  timeout: 30            # Request timeout in seconds
+  retry_attempts: 3      # Number of retry attempts on failure
+  
+  metadata:
+    description: "Yahoo Finance API via yfinance library"
+    data_coverage: "Global stock prices, fundamentals, events"
+    update_frequency: "Real-time during market hours"
+
+# Federal Reserve Economic Data (Free with API key)
+fred:
+  provider: fredapi
+  api_key: '2fa84c6323a0b906290a44ce5cf2c457'
+  endpoint: 'https://fred.stlouisfed.org/'
+  rate_limit: 120        # Requests per minute
+  timeout: 30            # Request timeout in seconds
+  retry_attempts: 3      # Number of retry attempts on failure
+  
+  metadata:
+    description: "Federal Reserve Economic Data API"
+    documentation: "https://fred.stlouisfed.org/docs/api/"
+    data_coverage: "US and international economic indicators"
+    update_frequency: "Daily"
+
+# Australian Bureau of Statistics (Free with registration)
+abs:
+  provider: abs_api
+  api_key: 'YOUR_ABS_API_KEY'    # Replace with actual API key when available
+  endpoint: 'https://api.data.abs.gov.au/'
+  rate_limit: 60         # Requests per minute (estimated)
+  timeout: 45            # Request timeout in seconds
+  retry_attempts: 3      # Number of retry attempts on failure
+  
+  metadata:
+    description: "Australian Bureau of Statistics API"
+    documentation: "https://api.data.abs.gov.au/docs/"
+    data_coverage: "Official Australian economic and demographic statistics"
+    update_frequency: "Varies by dataset (monthly/quarterly/annual)"
+    
+  status: "configured_not_active"  # Not yet activated
+
+# Alpaca (Premium - for future use)
+alpaca:
+  provider: alpaca_trade_api
+  api_key: 'YOUR_ALPACA_API_KEY'     # To be configured
+  secret_key: 'YOUR_ALPACA_SECRET'   # To be configured
+  endpoint: 'https://paper-api.alpaca.markets'  # Paper trading endpoint
+  rate_limit: 200        # Requests per minute
+  timeout: 30            # Request timeout in seconds
+  retry_attempts: 3      # Number of retry attempts on failure
+  
+  metadata:
+    description: "Alpaca Trading API"
+    documentation: "https://alpaca.markets/docs/"
+    data_coverage: "US stocks, options, crypto, real-time data"
+    update_frequency: "Real-time"
+    
+  status: "planned"      # Not yet implemented
+
+# Global Configuration
+global:
+  default_timeout: 30
+  default_retry_attempts: 3
+  max_concurrent_requests: 5
+  request_delay: 0.1     # Delay between requests in seconds
+  
+  # Data storage configuration
+  data_directory: "/home/david/trading-platform/financial_data_collector/financial_data"
+  
+  # Logging configuration
+  log_level: "INFO"
+  log_directory: "/home/david/trading-platform/financial_data_collector/logs" 

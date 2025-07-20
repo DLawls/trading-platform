@@ -1,0 +1,277 @@
+# data_requirements_official_asx50.yaml
+# Official ASX 50 by Market Cap - July 2025
+# Source: ASX.com.au Top 50 Market Cap (Official)
+
+ohlcv:
+  tickers:
+    # Official ASX 50 Companies (50 tickers) - Ranked by Market Cap
+    
+    # Top 10 by Market Cap
+    - CBA.AX   # Commonwealth Bank of Australia - $302.56B
+    - BHP.AX   # BHP Group Limited - $198.52B
+    - CSL.AX   # CSL Limited - $120.27B
+    - NAB.AX   # National Australia Bank Limited - $118.53B
+    - WBC.AX   # Westpac Banking Corporation - $115.32B
+    - NEM.AX   # Newmont Corporation - $98.11B
+    - WES.AX   # Wesfarmers Limited - $94.66B
+    - ANZ.AX   # ANZ Group Holdings Limited - $90.84B
+    - MQG.AX   # Macquarie Group Limited - $85.59B
+    - GMG.AX   # Goodman Group - $69.95B
+    
+    # 11-20 by Market Cap
+    - XYZ.AX   # Block, Inc. - $60.13B
+    - RMD.AX   # ResMed Inc - $57.85B
+    - TLS.AX   # Telstra Group Limited - $56.46B
+    - FMG.AX   # Fortescue Ltd - $52.06B
+    - WDS.AX   # Woodside Energy Group Ltd - $45.85B
+    - TCL.AX   # Transurban Group - $42.18B
+    - ALL.AX   # Aristocrat Leisure Limited - $41.79B
+    - RIO.AX   # Rio Tinto Limited - $41.24B
+    - WTC.AX   # WiseTech Global Limited - $38.09B
+    - WOW.AX   # Woolworths Group Limited - $37.85B
+    
+    # 21-30 by Market Cap
+    - QBE.AX   # QBE Insurance Group Limited - $34.53B
+    - PME.AX   # Pro Medicus Limited - $34.52B
+    - AMC.AX   # Amcor Plc - $33.75B
+    - BXB.AX   # Brambles Limited - $32.20B
+    - SIG.AX   # Sigma Healthcare Limited - $32.09B
+    - REA.AX   # REA Group Ltd - $31.40B
+    - NWS.AX   # News Corporation - $30.18B
+    - XRO.AX   # Xero Limited - $29.48B
+    - COL.AX   # Coles Group Limited - $27.42B
+    - STO.AX   # Santos Limited - $25.23B
+    
+    # 31-40 by Market Cap
+    - CPU.AX   # Computershare Limited - $23.82B
+    - JHX.AX   # James Hardie Industries Plc - $23.55B
+    - NST.AX   # Northern Star Resources Ltd - $23.34B
+    - SUN.AX   # Suncorp Group Limited - $22.26B
+    - VAS.AX   # Vanguard Australian Shares Index ETF - $20.86B
+    - URW.AX   # Unibail-Rodamco-Westfield - $20.45B
+    - ORG.AX   # Origin Energy Limited - $20.44B
+    - SGH.AX   # SGH Limited - $20.38B
+    - COH.AX   # Cochlear Limited - $20.08B
+    - IAG.AX   # Insurance Australia Group Limited - $20.08B
+    
+    # 41-50 by Market Cap
+    - FPH.AX   # Fisher & Paykel Healthcare Corporation Limited - $19.67B
+    - SCG.AX   # Scentre Group - $19.58B
+    - QAN.AX   # Qantas Airways Limited - $16.70B
+    - SOL.AX   # Washington H Soul Pattinson & Company Limited - $15.13B
+    - EVN.AX   # Evolution Mining Limited - $14.97B
+    - MPL.AX   # Medibank Private Limited - $14.18B
+    - ASX.AX   # ASX Limited - $13.86B
+    - CAR.AX   # Car Group Limited - $13.73B
+    - MEZ.AX   # Meridian Energy Limited - $13.70B
+    - SHL.AX   # Sonic Healthcare Limited - $13.51B
+    
+  intervals:
+    - daily
+
+macro:
+  indicators:
+    - CPALTT01AUQ657N    # CPI: Total, quarterly index
+    - LRHUTTTTAUM156S    # Monthly Unemployment Rate
+    - IR3TIB01AUM156N    # 3‑Month Interbank Rate (proxy for cash rate)
+
+fundamentals:
+  tickers:
+    # Official ASX 50 Companies (50 tickers) - Same as OHLCV
+    
+    # Top 10 by Market Cap
+    - CBA.AX   # Commonwealth Bank of Australia
+    - BHP.AX   # BHP Group Limited
+    - CSL.AX   # CSL Limited
+    - NAB.AX   # National Australia Bank Limited
+    - WBC.AX   # Westpac Banking Corporation
+    - NEM.AX   # Newmont Corporation
+    - WES.AX   # Wesfarmers Limited
+    - ANZ.AX   # ANZ Group Holdings Limited
+    - MQG.AX   # Macquarie Group Limited
+    - GMG.AX   # Goodman Group
+    
+    # 11-20 by Market Cap
+    - XYZ.AX   # Block, Inc.
+    - RMD.AX   # ResMed Inc
+    - TLS.AX   # Telstra Group Limited
+    - FMG.AX   # Fortescue Ltd
+    - WDS.AX   # Woodside Energy Group Ltd
+    - TCL.AX   # Transurban Group
+    - ALL.AX   # Aristocrat Leisure Limited
+    - RIO.AX   # Rio Tinto Limited
+    - WTC.AX   # WiseTech Global Limited
+    - WOW.AX   # Woolworths Group Limited
+    
+    # 21-30 by Market Cap
+    - QBE.AX   # QBE Insurance Group Limited
+    - PME.AX   # Pro Medicus Limited
+    - AMC.AX   # Amcor Plc
+    - BXB.AX   # Brambles Limited
+    - SIG.AX   # Sigma Healthcare Limited
+    - REA.AX   # REA Group Ltd
+    - NWS.AX   # News Corporation
+    - XRO.AX   # Xero Limited
+    - COL.AX   # Coles Group Limited
+    - STO.AX   # Santos Limited
+    
+    # 31-40 by Market Cap
+    - CPU.AX   # Computershare Limited
+    - JHX.AX   # James Hardie Industries Plc
+    - NST.AX   # Northern Star Resources Ltd
+    - SUN.AX   # Suncorp Group Limited
+    - VAS.AX   # Vanguard Australian Shares Index ETF
+    - URW.AX   # Unibail-Rodamco-Westfield
+    - ORG.AX   # Origin Energy Limited
+    - SGH.AX   # SGH Limited
+    - COH.AX   # Cochlear Limited
+    - IAG.AX   # Insurance Australia Group Limited
+    
+    # 41-50 by Market Cap
+    - FPH.AX   # Fisher & Paykel Healthcare Corporation Limited
+    - SCG.AX   # Scentre Group
+    - QAN.AX   # Qantas Airways Limited
+    - SOL.AX   # Washington H Soul Pattinson & Company Limited
+    - EVN.AX   # Evolution Mining Limited
+    - MPL.AX   # Medibank Private Limited
+    - ASX.AX   # ASX Limited
+    - CAR.AX   # Car Group Limited
+    - MEZ.AX   # Meridian Energy Limited
+    - SHL.AX   # Sonic Healthcare Limited
+    
+  fields:
+    - revenue
+    - eps
+    - pe_ratio
+    - net_income
+    - total_assets
+    - debt_to_equity
+
+events:
+  earnings:
+    tickers:
+      # Official ASX 50 Companies (50 tickers) - Same as OHLCV
+      
+      # Top 10 by Market Cap
+      - CBA.AX   # Commonwealth Bank of Australia
+      - BHP.AX   # BHP Group Limited
+      - CSL.AX   # CSL Limited
+      - NAB.AX   # National Australia Bank Limited
+      - WBC.AX   # Westpac Banking Corporation
+      - NEM.AX   # Newmont Corporation
+      - WES.AX   # Wesfarmers Limited
+      - ANZ.AX   # ANZ Group Holdings Limited
+      - MQG.AX   # Macquarie Group Limited
+      - GMG.AX   # Goodman Group
+      
+      # 11-20 by Market Cap
+      - XYZ.AX   # Block, Inc.
+      - RMD.AX   # ResMed Inc
+      - TLS.AX   # Telstra Group Limited
+      - FMG.AX   # Fortescue Ltd
+      - WDS.AX   # Woodside Energy Group Ltd
+      - TCL.AX   # Transurban Group
+      - ALL.AX   # Aristocrat Leisure Limited
+      - RIO.AX   # Rio Tinto Limited
+      - WTC.AX   # WiseTech Global Limited
+      - WOW.AX   # Woolworths Group Limited
+      
+      # 21-30 by Market Cap
+      - QBE.AX   # QBE Insurance Group Limited
+      - PME.AX   # Pro Medicus Limited
+      - AMC.AX   # Amcor Plc
+      - BXB.AX   # Brambles Limited
+      - SIG.AX   # Sigma Healthcare Limited
+      - REA.AX   # REA Group Ltd
+      - NWS.AX   # News Corporation
+      - XRO.AX   # Xero Limited
+      - COL.AX   # Coles Group Limited
+      - STO.AX   # Santos Limited
+      
+      # 31-40 by Market Cap
+      - CPU.AX   # Computershare Limited
+      - JHX.AX   # James Hardie Industries Plc
+      - NST.AX   # Northern Star Resources Ltd
+      - SUN.AX   # Suncorp Group Limited
+      - VAS.AX   # Vanguard Australian Shares Index ETF
+      - URW.AX   # Unibail-Rodamco-Westfield
+      - ORG.AX   # Origin Energy Limited
+      - SGH.AX   # SGH Limited
+      - COH.AX   # Cochlear Limited
+      - IAG.AX   # Insurance Australia Group Limited
+      
+      # 41-50 by Market Cap
+      - FPH.AX   # Fisher & Paykel Healthcare Corporation Limited
+      - SCG.AX   # Scentre Group
+      - QAN.AX   # Qantas Airways Limited
+      - SOL.AX   # Washington H Soul Pattinson & Company Limited
+      - EVN.AX   # Evolution Mining Limited
+      - MPL.AX   # Medibank Private Limited
+      - ASX.AX   # ASX Limited
+      - CAR.AX   # Car Group Limited
+      - MEZ.AX   # Meridian Energy Limited
+      - SHL.AX   # Sonic Healthcare Limited
+      
+  dividends:
+    tickers:
+      # Official ASX 50 Companies (50 tickers) - Same as OHLCV
+      
+      # Top 10 by Market Cap
+      - CBA.AX   # Commonwealth Bank of Australia
+      - BHP.AX   # BHP Group Limited
+      - CSL.AX   # CSL Limited
+      - NAB.AX   # National Australia Bank Limited
+      - WBC.AX   # Westpac Banking Corporation
+      - NEM.AX   # Newmont Corporation
+      - WES.AX   # Wesfarmers Limited
+      - ANZ.AX   # ANZ Group Holdings Limited
+      - MQG.AX   # Macquarie Group Limited
+      - GMG.AX   # Goodman Group
+      
+      # 11-20 by Market Cap
+      - XYZ.AX   # Block, Inc.
+      - RMD.AX   # ResMed Inc
+      - TLS.AX   # Telstra Group Limited
+      - FMG.AX   # Fortescue Ltd
+      - WDS.AX   # Woodside Energy Group Ltd
+      - TCL.AX   # Transurban Group
+      - ALL.AX   # Aristocrat Leisure Limited
+      - RIO.AX   # Rio Tinto Limited
+      - WTC.AX   # WiseTech Global Limited
+      - WOW.AX   # Woolworths Group Limited
+      
+      # 21-30 by Market Cap
+      - QBE.AX   # QBE Insurance Group Limited
+      - PME.AX   # Pro Medicus Limited
+      - AMC.AX   # Amcor Plc
+      - BXB.AX   # Brambles Limited
+      - SIG.AX   # Sigma Healthcare Limited
+      - REA.AX   # REA Group Ltd
+      - NWS.AX   # News Corporation
+      - XRO.AX   # Xero Limited
+      - COL.AX   # Coles Group Limited
+      - STO.AX   # Santos Limited
+      
+      # 31-40 by Market Cap
+      - CPU.AX   # Computershare Limited
+      - JHX.AX   # James Hardie Industries Plc
+      - NST.AX   # Northern Star Resources Ltd
+      - SUN.AX   # Suncorp Group Limited
+      - VAS.AX   # Vanguard Australian Shares Index ETF
+      - URW.AX   # Unibail-Rodamco-Westfield
+      - ORG.AX   # Origin Energy Limited
+      - SGH.AX   # SGH Limited
+      - COH.AX   # Cochlear Limited
+      - IAG.AX   # Insurance Australia Group Limited
+      
+      # 41-50 by Market Cap
+      - FPH.AX   # Fisher & Paykel Healthcare Corporation Limited
+      - SCG.AX   # Scentre Group
+      - QAN.AX   # Qantas Airways Limited
+      - SOL.AX   # Washington H Soul Pattinson & Company Limited
+      - EVN.AX   # Evolution Mining Limited
+      - MPL.AX   # Medibank Private Limited
+      - ASX.AX   # ASX Limited
+      - CAR.AX   # Car Group Limited
+      - MEZ.AX   # Meridian Energy Limited
+      - SHL.AX   # Sonic Healthcare Limited 

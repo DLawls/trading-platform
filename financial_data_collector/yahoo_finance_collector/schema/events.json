@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Event Data",
+  "type": "object",
+  "properties": {
+    "ticker": {"type": "string"},
+    "Earnings Date": {"type": ["string", "object", "number"]},
+    "EPS Estimate": {"type": ["number", "null"]},
+    "Reported EPS": {"type": ["number", "null"]},
+    "Surprise(%)": {"type": ["number", "null"]},
+    "Event Type": {"type": "string"},
+    "date": {"type": ["string", "object", "number"]},
+    "dividend": {"type": "number"}
+  },
+  "required": ["ticker"]
+} 

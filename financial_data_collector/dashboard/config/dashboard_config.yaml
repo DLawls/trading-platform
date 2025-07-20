@@ -1,0 +1,62 @@
+# dashboard_config.yaml
+# Configuration for the unified financial data collector dashboard
+
+dashboard:
+  title: "Module 1 - Financial Data Collector"
+  refresh_interval: 30  # seconds
+  auto_refresh: false
+  
+  # Color theme
+  colors:
+    success: "#28a745"
+    warning: "#ffc107" 
+    error: "#dc3545"
+    info: "#17a2b8"
+    primary: "#007bff"
+
+collectors:
+  yahoo_finance:
+    name: "Yahoo Finance"
+    icon: "📈"
+    status: "active"
+    description: "ASX 50 market data collection"
+    data_types: ["ohlcv", "fundamentals", "events"]
+    
+  fred_economic:
+    name: "FRED Economic"
+    icon: "🏛️"
+    status: "active" 
+    description: "US Federal Reserve economic data"
+    data_types: ["economic"]
+    
+  abs_australian:
+    name: "ABS Australian"
+    icon: "🇦🇺"
+    status: "configured"
+    description: "Australian Bureau of Statistics"
+    data_types: ["economic"]
+    
+  alpaca_alternative:
+    name: "Alpaca Premium"
+    icon: "🚀"
+    status: "planned"
+    description: "Premium market data service"
+    data_types: ["ohlcv", "options", "crypto"]
+
+monitoring:
+  data_freshness_hours: 24
+  quality_check_interval: 60  # minutes
+  alert_thresholds:
+    collection_failure_rate: 10  # percent
+    data_age_hours: 48
+    missing_files_percent: 5
+    
+alerts:
+  enabled: true
+  email_notifications: false  # Not implemented yet
+  dashboard_notifications: true
+  
+performance:
+  cache_duration: 300  # seconds
+  max_chart_points: 1000
+  pagination_size: 50 
