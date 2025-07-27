@@ -1,0 +1,272 @@
+[
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-06-27T09:49:06",
+    "open": 64.82,
+    "high": 65.86,
+    "low": 64.58,
+    "close": 64.84,
+    "volume": 2654604
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-06-28T09:49:06",
+    "open": 65.53,
+    "high": 65.75,
+    "low": 65.11,
+    "close": 65.66,
+    "volume": 2363980
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-06-29T09:49:06",
+    "open": 65.29,
+    "high": 66.56,
+    "low": 64.37,
+    "close": 65.55,
+    "volume": 836357
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-06-30T09:49:06",
+    "open": 68.41,
+    "high": 68.91,
+    "low": 67.42,
+    "close": 68.71,
+    "volume": 5715548
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-01T09:49:06",
+    "open": 68.02,
+    "high": 69.2,
+    "low": 67.64,
+    "close": 67.78,
+    "volume": 4888234
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-02T09:49:06",
+    "open": 67.43,
+    "high": 69.13,
+    "low": 67.07,
+    "close": 67.81,
+    "volume": 7647755
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-03T09:49:06",
+    "open": 66.66,
+    "high": 67.99,
+    "low": 65.79,
+    "close": 66.32,
+    "volume": 8327709
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-04T09:49:06",
+    "open": 64.46,
+    "high": 65.61,
+    "low": 63.24,
+    "close": 64.31,
+    "volume": 7569117
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-05T09:49:06",
+    "open": 63.61,
+    "high": 64.07,
+    "low": 62.52,
+    "close": 63.83,
+    "volume": 9224108
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-06T09:49:06",
+    "open": 63.74,
+    "high": 65.01,
+    "low": 63.11,
+    "close": 63.92,
+    "volume": 5186494
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-07T09:49:06",
+    "open": 62.31,
+    "high": 63.11,
+    "low": 61.89,
+    "close": 62.02,
+    "volume": 8760061
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-08T09:49:06",
+    "open": 62.14,
+    "high": 63.23,
+    "low": 60.7,
+    "close": 61.63,
+    "volume": 2399811
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-09T09:49:06",
+    "open": 63.22,
+    "high": 63.91,
+    "low": 63.08,
+    "close": 63.11,
+    "volume": 3776570
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-10T09:49:06",
+    "open": 63.74,
+    "high": 64.9,
+    "low": 63.73,
+    "close": 63.88,
+    "volume": 1928086
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-11T09:49:06",
+    "open": 66.39,
+    "high": 66.85,
+    "low": 66.14,
+    "close": 66.52,
+    "volume": 9088228
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-12T09:49:06",
+    "open": 64.99,
+    "high": 65.93,
+    "low": 64.57,
+    "close": 64.94,
+    "volume": 2023495
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-13T09:49:06",
+    "open": 67.65,
+    "high": 68.83,
+    "low": 66.96,
+    "close": 68.02,
+    "volume": 9118089
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-14T09:49:06",
+    "open": 64.52,
+    "high": 64.97,
+    "low": 63.88,
+    "close": 64.72,
+    "volume": 7665575
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-15T09:49:06",
+    "open": 67.23,
+    "high": 68.72,
+    "low": 66.21,
+    "close": 67.44,
+    "volume": 4357174
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-16T09:49:06",
+    "open": 69.32,
+    "high": 70.42,
+    "low": 67.99,
+    "close": 69.78,
+    "volume": 7009998
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-17T09:49:06",
+    "open": 68.05,
+    "high": 68.99,
+    "low": 67.59,
+    "close": 68.37,
+    "volume": 340950
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-18T09:49:06",
+    "open": 67.17,
+    "high": 67.48,
+    "low": 67.09,
+    "close": 67.1,
+    "volume": 5511641
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-19T09:49:06",
+    "open": 64.03,
+    "high": 65.1,
+    "low": 63.12,
+    "close": 64.3,
+    "volume": 5904711
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-20T09:49:06",
+    "open": 64.71,
+    "high": 65.62,
+    "low": 63.61,
+    "close": 65.13,
+    "volume": 2780910
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-21T09:49:06",
+    "open": 67.79,
+    "high": 69.38,
+    "low": 67.22,
+    "close": 68.06,
+    "volume": 4424182
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-22T09:49:06",
+    "open": 69.68,
+    "high": 70.87,
+    "low": 69.52,
+    "close": 69.96,
+    "volume": 2180187
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-23T09:49:06",
+    "open": 67.08,
+    "high": 67.3,
+    "low": 66.59,
+    "close": 67.23,
+    "volume": 6731018
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-24T09:49:06",
+    "open": 69.56,
+    "high": 69.76,
+    "low": 68.62,
+    "close": 69.54,
+    "volume": 7842127
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-25T09:49:06",
+    "open": 68.24,
+    "high": 69.07,
+    "low": 67.65,
+    "close": 68.19,
+    "volume": 7338403
+  },
+  {
+    "ticker": "ETHUSD",
+    "datetime": "2025-07-26T09:49:06",
+    "open": 70.08,
+    "high": 71.63,
+    "low": 68.82,
+    "close": 70.35,
+    "volume": 1709768
+  }
+]

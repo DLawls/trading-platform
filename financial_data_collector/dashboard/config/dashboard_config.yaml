@@ -46,9 +46,12 @@ collectors:
   alpaca_alternative:
     name: "Alpaca Premium"
     icon: "🚀"
-    status: "planned"
-    description: "Premium market data service"
-    data_types: ["ohlcv", "options", "crypto"]
+    status: "active"
+    description: "Premium US market data and ASX ADRs"
+    data_types: ["ohlcv", "events", "crypto"]
+    method: "api"
+    coverage: "US stocks (10) + ASX ADRs (2) + Crypto (3)"
+    features: ["real_time_data", "premium_feeds", "intraday_support"]
 
 monitoring:
   data_freshness_hours: 24

@@ -1,0 +1,65 @@
+[
+  {
+    "ticker": "AMZN",
+    "datetime": "2025-07-20T09:49:06",
+    "open": 307.11,
+    "high": 308.52,
+    "low": 303.82,
+    "close": 306.65,
+    "volume": 6266882
+  },
+  {
+    "ticker": "AMZN",
+    "datetime": "2025-07-21T09:49:06",
+    "open": 295.69,
+    "high": 298.88,
+    "low": 290.57,
+    "close": 296.06,
+    "volume": 5611082
+  },
+  {
+    "ticker": "AMZN",
+    "datetime": "2025-07-22T09:49:06",
+    "open": 296.44,
+    "high": 302.48,
+    "low": 294.15,
+    "close": 296.8,
+    "volume": 8233429
+  },
+  {
+    "ticker": "AMZN",
+    "datetime": "2025-07-23T09:49:06",
+    "open": 293.83,
+    "high": 295.75,
+    "low": 288.01,
+    "close": 293.51,
+    "volume": 4339863
+  },
+  {
+    "ticker": "AMZN",
+    "datetime": "2025-07-24T09:49:06",
+    "open": 302.39,
+    "high": 308.04,
+    "low": 296.62,
+    "close": 304.1,
+    "volume": 8576437
+  },
+  {
+    "ticker": "AMZN",
+    "datetime": "2025-07-25T09:49:06",
+    "open": 306.12,
+    "high": 308.85,
+    "low": 303.01,
+    "close": 306.61,
+    "volume": 8451208
+  },
+  {
+    "ticker": "AMZN",
+    "datetime": "2025-07-26T09:49:06",
+    "open": 295.34,
+    "high": 300.22,
+    "low": 292.82,
+    "close": 295.38,
+    "volume": 8041865
+  }
+]

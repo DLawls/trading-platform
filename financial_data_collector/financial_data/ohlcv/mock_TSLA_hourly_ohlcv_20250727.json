@@ -1,0 +1,65 @@
+[
+  {
+    "ticker": "TSLA",
+    "datetime": "2025-07-20T09:49:06",
+    "open": 271.29,
+    "high": 275.27,
+    "low": 266.16,
+    "close": 271.48,
+    "volume": 4287413
+  },
+  {
+    "ticker": "TSLA",
+    "datetime": "2025-07-21T09:49:06",
+    "open": 259.22,
+    "high": 264.21,
+    "low": 255.0,
+    "close": 258.09,
+    "volume": 6798432
+  },
+  {
+    "ticker": "TSLA",
+    "datetime": "2025-07-22T09:49:06",
+    "open": 260.25,
+    "high": 263.14,
+    "low": 259.55,
+    "close": 260.42,
+    "volume": 7025536
+  },
+  {
+    "ticker": "TSLA",
+    "datetime": "2025-07-23T09:49:06",
+    "open": 256.07,
+    "high": 260.34,
+    "low": 251.44,
+    "close": 256.89,
+    "volume": 4293755
+  },
+  {
+    "ticker": "TSLA",
+    "datetime": "2025-07-24T09:49:06",
+    "open": 268.84,
+    "high": 270.58,
+    "low": 264.94,
+    "close": 268.79,
+    "volume": 3641520
+  },
+  {
+    "ticker": "TSLA",
+    "datetime": "2025-07-25T09:49:06",
+    "open": 256.79,
+    "high": 258.28,
+    "low": 255.72,
+    "close": 256.66,
+    "volume": 1744860
+  },
+  {
+    "ticker": "TSLA",
+    "datetime": "2025-07-26T09:49:06",
+    "open": 267.18,
+    "high": 271.32,
+    "low": 265.73,
+    "close": 267.27,
+    "volume": 4062340
+  }
+]

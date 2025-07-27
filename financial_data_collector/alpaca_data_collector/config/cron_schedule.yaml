@@ -1,0 +1,72 @@
+# cron_schedule.yaml
+# Automated scheduling for Alpaca data collection
+
+# Daily data collection (post-market close)
+daily_collection:
+  # Run after US market close (4:30 PM ET = 6:30 AM AEST next day)
+  schedule: "30 6 * * 1-5"  # 6:30 AM AEST, Monday-Friday
+  description: "Daily OHLCV, fundamentals, and events collection"
+  modules:
+    - ohlcv
+    - fundamentals
+    - events
+  priority: "high"
+  timeout: "30m"
+  
+# Hourly data collection (during market hours)
+hourly_collection:
+  # Run every hour during US market hours (9:30 AM - 4:00 PM ET)
+  schedule: "30 9-16 * * 1-5"  # Every hour from 9:30 AM to 4:30 PM ET
+  description: "Hourly OHLCV data for intraday analysis"
+  modules:
+    - ohlcv_hourly
+  priority: "medium"
+  timeout: "10m"
+  enabled: false  # Disabled by default, enable for real-time trading
+  
+# Weekly fundamentals refresh
+weekly_collection:
+  schedule: "0 7 * * 1"     # 7:00 AM AEST, Monday
+  description: "Weekly fundamentals and corporate events update"
+  modules:
+    - fundamentals_deep
+    - events_calendar
+  priority: "low"
+  timeout: "45m"
+  
+# Monthly data quality check
+monthly_maintenance:
+  schedule: "0 5 1 * *"     # 5:00 AM AEST, 1st of each month
+  description: "Monthly data quality checks and maintenance"
+  modules:
+    - data_validation
+    - cleanup_old_logs
+  priority: "maintenance"
+  timeout: "60m"
+
+# Crypto collection (24/7 markets)
+crypto_collection:
+  schedule: "*/30 * * * *"  # Every 30 minutes
+  description: "Crypto price data collection (24/7)"
+  modules:
+    - crypto_ohlcv
+  priority: "low"
+  timeout: "5m"
+  enabled: false  # Disabled by default
+
+# Global schedule settings
+settings:
+  timezone: "Australia/Sydney"
+  max_concurrent_jobs: 2
+  retry_attempts: 3
+  retry_delay: "5m"
+  notifications:
+    email: false
+    dashboard: true
+  
+  # Integration with main orchestrator
+  orchestrator_integration:
+    enabled: true
+    main_schedule: "30 6 * * 1-5"  # Align with Yahoo Finance collector
+    offset_minutes: 5              # Start 5 minutes after main collection
+

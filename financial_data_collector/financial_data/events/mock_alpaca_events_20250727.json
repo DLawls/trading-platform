@@ -1,0 +1,52 @@
+[
+  {
+    "ticker": "MSFT",
+    "datetime": "2025-05-26T09:49:06",
+    "event_type": "dividend",
+    "value": 0.99,
+    "raw_data": {
+      "type": "dividend",
+      "amount": 1.25
+    }
+  },
+  {
+    "ticker": "GOOGL",
+    "datetime": "2025-06-25T09:49:06",
+    "event_type": "earnings",
+    "value": 2.16,
+    "raw_data": {
+      "type": "earnings",
+      "eps": 2.45
+    }
+  },
+  {
+    "ticker": "AMZN",
+    "datetime": "2025-06-08T09:49:06",
+    "event_type": "earnings",
+    "value": 4.29,
+    "raw_data": {
+      "type": "earnings",
+      "eps": 2.45
+    }
+  },
+  {
+    "ticker": "NVDA",
+    "datetime": "2025-05-07T09:49:06",
+    "event_type": "dividend",
+    "value": 1.55,
+    "raw_data": {
+      "type": "dividend",
+      "amount": 1.25
+    }
+  },
+  {
+    "ticker": "NVDA",
+    "datetime": "2025-07-18T09:49:06",
+    "event_type": "earnings",
+    "value": 3.91,
+    "raw_data": {
+      "type": "earnings",
+      "eps": 2.45
+    }
+  }
+]

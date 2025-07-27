@@ -1,0 +1,272 @@
+[
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-06-27T09:49:06",
+    "open": 65.24,
+    "high": 65.45,
+    "low": 64.27,
+    "close": 64.76,
+    "volume": 4045545
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-06-28T09:49:06",
+    "open": 67.35,
+    "high": 68.75,
+    "low": 66.21,
+    "close": 67.86,
+    "volume": 1297374
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-06-29T09:49:06",
+    "open": 67.41,
+    "high": 68.76,
+    "low": 66.42,
+    "close": 67.52,
+    "volume": 1080219
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-06-30T09:49:06",
+    "open": 68.08,
+    "high": 68.66,
+    "low": 67.35,
+    "close": 67.81,
+    "volume": 9455841
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-01T09:49:06",
+    "open": 67.89,
+    "high": 68.21,
+    "low": 67.53,
+    "close": 67.71,
+    "volume": 8889577
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-02T09:49:06",
+    "open": 65.57,
+    "high": 65.66,
+    "low": 64.16,
+    "close": 65.14,
+    "volume": 4556328
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-03T09:49:06",
+    "open": 64.22,
+    "high": 64.6,
+    "low": 63.33,
+    "close": 64.02,
+    "volume": 7586872
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-04T09:49:06",
+    "open": 62.14,
+    "high": 62.98,
+    "low": 61.68,
+    "close": 62.09,
+    "volume": 1113246
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-05T09:49:06",
+    "open": 62.44,
+    "high": 62.92,
+    "low": 61.39,
+    "close": 62.36,
+    "volume": 5910700
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-06T09:49:06",
+    "open": 62.64,
+    "high": 63.78,
+    "low": 62.33,
+    "close": 62.51,
+    "volume": 5099886
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-07T09:49:06",
+    "open": 63.76,
+    "high": 64.33,
+    "low": 63.65,
+    "close": 63.89,
+    "volume": 4279930
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-08T09:49:06",
+    "open": 62.97,
+    "high": 63.07,
+    "low": 61.39,
+    "close": 62.52,
+    "volume": 3316832
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-09T09:49:06",
+    "open": 65.24,
+    "high": 65.78,
+    "low": 64.29,
+    "close": 65.56,
+    "volume": 6406324
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-10T09:49:06",
+    "open": 64.53,
+    "high": 65.64,
+    "low": 63.79,
+    "close": 64.79,
+    "volume": 3812945
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-11T09:49:06",
+    "open": 64.68,
+    "high": 64.77,
+    "low": 64.56,
+    "close": 64.69,
+    "volume": 1705912
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-12T09:49:06",
+    "open": 64.37,
+    "high": 65.01,
+    "low": 63.95,
+    "close": 64.2,
+    "volume": 9744487
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-13T09:49:06",
+    "open": 62.86,
+    "high": 64.51,
+    "low": 62.6,
+    "close": 63.32,
+    "volume": 1208232
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-14T09:49:06",
+    "open": 60.23,
+    "high": 61.3,
+    "low": 59.32,
+    "close": 60.16,
+    "volume": 4120597
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-15T09:49:06",
+    "open": 57.71,
+    "high": 58.86,
+    "low": 57.01,
+    "close": 58.23,
+    "volume": 2186556
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-16T09:49:06",
+    "open": 57.66,
+    "high": 57.75,
+    "low": 56.39,
+    "close": 57.4,
+    "volume": 1195597
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-17T09:49:06",
+    "open": 58.53,
+    "high": 58.74,
+    "low": 57.96,
+    "close": 58.54,
+    "volume": 6055186
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-18T09:49:06",
+    "open": 59.69,
+    "high": 60.89,
+    "low": 58.81,
+    "close": 60.06,
+    "volume": 2468879
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-19T09:49:06",
+    "open": 60.02,
+    "high": 61.09,
+    "low": 59.43,
+    "close": 60.19,
+    "volume": 8062425
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-20T09:49:06",
+    "open": 58.95,
+    "high": 59.92,
+    "low": 58.58,
+    "close": 59.4,
+    "volume": 8647117
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-21T09:49:06",
+    "open": 58.7,
+    "high": 59.09,
+    "low": 58.65,
+    "close": 58.8,
+    "volume": 4176887
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-22T09:49:06",
+    "open": 58.05,
+    "high": 59.21,
+    "low": 57.85,
+    "close": 58.22,
+    "volume": 314867
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-23T09:49:06",
+    "open": 61.17,
+    "high": 61.94,
+    "low": 60.31,
+    "close": 60.62,
+    "volume": 7499191
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-24T09:49:06",
+    "open": 58.4,
+    "high": 59.22,
+    "low": 57.5,
+    "close": 58.55,
+    "volume": 9985467
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-25T09:49:06",
+    "open": 55.8,
+    "high": 56.21,
+    "low": 54.57,
+    "close": 55.48,
+    "volume": 434968
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-26T09:49:06",
+    "open": 55.81,
+    "high": 56.35,
+    "low": 55.61,
+    "close": 55.61,
+    "volume": 5579328
+  }
+]

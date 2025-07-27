@@ -63,7 +63,7 @@ alpaca:
     data_coverage: "US stocks, options, crypto, real-time data"
     update_frequency: "Real-time"
     
-  status: "planned"      # Not yet implemented
+  status: "configured"   # Ready for activation with API keys
 
 # Global Configuration
 global:

@@ -1,0 +1,65 @@
+[
+  {
+    "ticker": "MSFT",
+    "datetime": "2025-07-20T09:49:06",
+    "open": 438.49,
+    "high": 443.1,
+    "low": 427.03,
+    "close": 434.65,
+    "volume": 3798326
+  },
+  {
+    "ticker": "MSFT",
+    "datetime": "2025-07-21T09:49:06",
+    "open": 417.34,
+    "high": 423.5,
+    "low": 416.49,
+    "close": 418.68,
+    "volume": 6312270
+  },
+  {
+    "ticker": "MSFT",
+    "datetime": "2025-07-22T09:49:06",
+    "open": 418.98,
+    "high": 419.25,
+    "low": 416.8,
+    "close": 418.9,
+    "volume": 821875
+  },
+  {
+    "ticker": "MSFT",
+    "datetime": "2025-07-23T09:49:06",
+    "open": 425.96,
+    "high": 433.38,
+    "low": 420.85,
+    "close": 428.58,
+    "volume": 7670828
+  },
+  {
+    "ticker": "MSFT",
+    "datetime": "2025-07-24T09:49:06",
+    "open": 411.6,
+    "high": 422.03,
+    "low": 410.09,
+    "close": 415.5,
+    "volume": 9687553
+  },
+  {
+    "ticker": "MSFT",
+    "datetime": "2025-07-25T09:49:06",
+    "open": 423.58,
+    "high": 424.11,
+    "low": 417.93,
+    "close": 421.41,
+    "volume": 4364496
+  },
+  {
+    "ticker": "MSFT",
+    "datetime": "2025-07-26T09:49:06",
+    "open": 436.21,
+    "high": 436.56,
+    "low": 425.45,
+    "close": 432.35,
+    "volume": 9049966
+  }
+]

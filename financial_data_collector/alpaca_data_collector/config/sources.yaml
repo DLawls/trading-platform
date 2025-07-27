@@ -1,0 +1,29 @@
+alpaca:
+  provider: alpaca_trade_api
+  api_key: PK1SVIMF4KUIZ0SZLRT9
+  secret_key: vrq0iOAlq1H94lnKE4P8V9ztiWseOWCuQJPCqgQa
+  endpoint: https://paper-api.alpaca.markets
+  data_endpoint: https://data.alpaca.markets
+  rate_limit: 200
+  timeout: 30
+  retry_attempts: 3
+  metadata:
+    description: Alpaca Trading API - Premium market data service
+    documentation: https://alpaca.markets/docs/
+    data_coverage: US stocks, options, crypto, real-time data
+    update_frequency: Real-time
+  status: active
+asx_mapping:
+  note: Limited ASX coverage - primarily for US equivalent ADRs
+  available_adrs:
+  - BHP
+  - RIO
+  - WBC
+global:
+  default_timeout: 30
+  default_retry_attempts: 3
+  max_concurrent_requests: 5
+  request_delay: 0.1
+  data_directory: ../financial_data
+  log_level: INFO
+  log_directory: ../logs

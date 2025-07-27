@@ -1,0 +1,65 @@
+[
+  {
+    "ticker": "AAPL",
+    "datetime": "2025-07-20T09:49:06",
+    "open": 368.96,
+    "high": 370.66,
+    "low": 363.35,
+    "close": 368.76,
+    "volume": 7143816
+  },
+  {
+    "ticker": "AAPL",
+    "datetime": "2025-07-21T09:49:06",
+    "open": 352.26,
+    "high": 355.57,
+    "low": 348.34,
+    "close": 352.2,
+    "volume": 1618896
+  },
+  {
+    "ticker": "AAPL",
+    "datetime": "2025-07-22T09:49:06",
+    "open": 343.6,
+    "high": 349.35,
+    "low": 338.43,
+    "close": 345.59,
+    "volume": 431359
+  },
+  {
+    "ticker": "AAPL",
+    "datetime": "2025-07-23T09:49:06",
+    "open": 359.89,
+    "high": 365.53,
+    "low": 357.34,
+    "close": 358.87,
+    "volume": 5616554
+  },
+  {
+    "ticker": "AAPL",
+    "datetime": "2025-07-24T09:49:06",
+    "open": 341.61,
+    "high": 346.01,
+    "low": 340.09,
+    "close": 342.12,
+    "volume": 1846530
+  },
+  {
+    "ticker": "AAPL",
+    "datetime": "2025-07-25T09:49:06",
+    "open": 349.04,
+    "high": 356.53,
+    "low": 346.78,
+    "close": 350.18,
+    "volume": 3330289
+  },
+  {
+    "ticker": "AAPL",
+    "datetime": "2025-07-26T09:49:06",
+    "open": 354.95,
+    "high": 360.06,
+    "low": 349.27,
+    "close": 353.57,
+    "volume": 5163836
+  }
+]

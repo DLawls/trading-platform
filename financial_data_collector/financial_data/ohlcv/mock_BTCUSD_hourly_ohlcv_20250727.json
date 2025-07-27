@@ -1,0 +1,65 @@
+[
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-20T09:49:06",
+    "open": 189.58,
+    "high": 192.41,
+    "low": 187.72,
+    "close": 191.15,
+    "volume": 745646
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-21T09:49:06",
+    "open": 195.7,
+    "high": 199.01,
+    "low": 195.2,
+    "close": 196.21,
+    "volume": 9386457
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-22T09:49:06",
+    "open": 188.31,
+    "high": 192.03,
+    "low": 186.36,
+    "close": 188.77,
+    "volume": 971952
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-23T09:49:06",
+    "open": 186.75,
+    "high": 189.61,
+    "low": 182.21,
+    "close": 185.11,
+    "volume": 4561106
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-24T09:49:06",
+    "open": 194.26,
+    "high": 197.59,
+    "low": 193.93,
+    "close": 195.27,
+    "volume": 342615
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-25T09:49:06",
+    "open": 198.2,
+    "high": 200.74,
+    "low": 197.36,
+    "close": 197.96,
+    "volume": 9353022
+  },
+  {
+    "ticker": "BTCUSD",
+    "datetime": "2025-07-26T09:49:06",
+    "open": 204.64,
+    "high": 208.35,
+    "low": 199.6,
+    "close": 203.38,
+    "volume": 5828087
+  }
+]

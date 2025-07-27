@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  alpaca-collector:
+    build: .
+    container_name: alpaca-data-collector
+    volumes:
+      # Mount shared data directory
+      - ../financial_data:/app/financial_data
+      # Mount logs directory
+      - ./logs:/app/logs
+      # Mount config for easy updates (optional)
+      - ./config:/app/config:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=Australia/Sydney
+    restart: unless-stopped
+    
+    # Optional: Run on schedule instead of continuous
+    # profiles: ["manual"]  # Uncomment to require manual start
+    
+    # Network for communication with dashboard (if needed)
+    networks:
+      - trading-platform
+      
+    # Health check
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import yaml; print('OK')"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Optional: Dashboard service (if running separately)
+  # dashboard:
+  #   build: ../dashboard
+  #   container_name: trading-dashboard
+  #   ports:
+  #     - "8501:8501"
+  #   volumes:
+  #     - ../financial_data:/app/financial_data:ro
+  #   networks:
+  #     - trading-platform
+
+networks:
+  trading-platform:
+    driver: bridge
+
+volumes:
+  financial_data:
+    external: false 

@@ -1,0 +1,47 @@
+# sources.yaml
+# API keys, endpoints, and provider configs for Alpaca data ingestion
+
+alpaca:
+  provider: alpaca_trade_api
+  api_key: 'YOUR_ALPACA_API_KEY'     # Replace with actual API key
+  secret_key: 'YOUR_ALPACA_SECRET'   # Replace with actual secret key
+  endpoint: 'https://paper-api.alpaca.markets'  # Paper trading endpoint
+  data_endpoint: 'https://data.alpaca.markets'  # Market data endpoint
+  rate_limit: 200        # Requests per minute
+  timeout: 30            # Request timeout in seconds
+  retry_attempts: 3      # Number of retry attempts on failure
+  
+  metadata:
+    description: "Alpaca Trading API - Premium market data service"
+    documentation: "https://alpaca.markets/docs/"
+    data_coverage: "US stocks, options, crypto, real-time data"
+    update_frequency: "Real-time"
+    
+  status: "configured"   # Ready for activation with API keys
+
+# Configuration for Australian stocks via Alpaca
+# Note: Alpaca primarily serves US markets, but provides some international coverage
+asx_mapping:
+  # Map ASX tickers to available symbols on Alpaca
+  # Many ASX stocks are not available on Alpaca, this is for backup/alternative data
+  note: "Limited ASX coverage - primarily for US equivalent ADRs"
+  available_adrs:
+    # Major ASX companies with US ADR listings
+    - BHP        # BHP Group (US listing)
+    - RIO        # Rio Tinto (US listing) 
+    - WBC        # Some major banks may have ADR coverage
+  
+# Global Configuration
+global:
+  default_timeout: 30
+  default_retry_attempts: 3
+  max_concurrent_requests: 5
+  request_delay: 0.1     # Delay between requests in seconds
+  
+  # Data storage configuration  
+  data_directory: "../financial_data"
+  
+  # Logging configuration
+  log_level: "INFO"
+  log_directory: "../logs"
+

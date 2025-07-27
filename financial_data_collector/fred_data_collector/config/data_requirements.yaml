@@ -1,0 +1,76 @@
+# FRED Economic Data Collection Requirements
+# Federal Reserve Economic Data API configuration
+
+economic_indicators:
+  # Australian Economic Indicators (10)
+  australian:
+    - CPALTT01AUQ657N    # CPI: Total All Items for Australia (Quarterly)
+    - LRHUTTTTAUM156S    # Unemployment Rate: Aged 15-64: All Persons for Australia (Monthly)
+    - IR3TIB01AUM156N    # 3-Month Interbank Rate for Australia (Monthly)
+    - NAEXKP01AUQ657S    # GDP: Total Gross Domestic Product for Australia (Quarterly)
+    - CCRETT01AUQ661N    # Real Effective Exchange Rates for Australia (Quarterly)
+    - DDOI05AUA156NWDB   # Monetary Policy Rate for Australia (Monthly)
+    - MYAGM2AUM052N      # Broad Money for Australia (Monthly)  
+    - CPIENGSL           # Core CPI for Australia (Monthly)
+    - AUSREC             # Australian Recession Indicator (Monthly)
+    - IIPBALAUQ190N      # Current Account Balance for Australia (Quarterly)
+
+  # US Economic Indicators (4)
+  us:
+    - FEDFUNDS           # Federal Funds Rate (Monthly)
+    - CPIAUCSL           # Consumer Price Index for All Urban Consumers: All Items (Monthly)
+    - UNRATE             # Unemployment Rate (Monthly)
+    - GDP                # Gross Domestic Product (Quarterly)
+
+  # Global Economic Indicators (1)
+  global:
+    - DEXUSAL            # US Dollar/Australian Dollar Exchange Rate (Daily)
+
+# Collection Configuration
+collection:
+  # Data retrieval settings
+  observation_start: "2015-01-01"    # Start date for historical data
+  observation_end: "latest"          # End date (latest available)
+  frequency: "auto"                  # Let FRED determine optimal frequency
+  
+  # API settings
+  units: "lin"                       # Linear units (no transformation)
+  output_type: "vintage"             # Real-time vintage data
+  file_type: "json"                  # Output format for intermediate processing
+  
+# Data Validation
+validation:
+  # Quality checks
+  min_observations: 10               # Minimum data points required
+  max_missing_pct: 20               # Maximum percentage of missing values
+  
+  # Metadata requirements
+  required_fields:
+    - id                            # Series ID
+    - title                         # Series title
+    - observation_start             # Data start date
+    - observation_end               # Data end date
+    - frequency                     # Data frequency
+    - units                         # Units of measurement
+    
+# Output Configuration  
+output:
+  # File naming
+  filename_pattern: "{series_id}_{date}.parquet"
+  date_format: "%Y%m%d"
+  
+  # Storage settings
+  output_directory: "../financial_data/economic/fred"
+  compress: true                     # Enable compression
+  index: false                      # Don't include index in output
+
+# Monitoring
+monitoring:
+  # Success criteria
+  min_success_rate: 80              # Minimum percentage of successful collections
+  max_collection_time: 300          # Maximum collection time in seconds
+  
+  # Alerts
+  alert_on_failure: true            # Send alerts on collection failure
+  retry_attempts: 3                 # Number of retry attempts
+  retry_delay: 5                    # Delay between retries (seconds) 

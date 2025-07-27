@@ -1,0 +1,272 @@
+[
+  {
+    "ticker": "BHP",
+    "datetime": "2025-06-27T09:49:06",
+    "open": 455.93,
+    "high": 466.32,
+    "low": 452.59,
+    "close": 459.14,
+    "volume": 9370601
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-06-28T09:49:06",
+    "open": 442.65,
+    "high": 448.26,
+    "low": 434.81,
+    "close": 442.3,
+    "volume": 7367099
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-06-29T09:49:06",
+    "open": 426.12,
+    "high": 426.88,
+    "low": 422.5,
+    "close": 425.78,
+    "volume": 9689816
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-06-30T09:49:06",
+    "open": 441.71,
+    "high": 448.4,
+    "low": 441.22,
+    "close": 442.17,
+    "volume": 2937241
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-01T09:49:06",
+    "open": 432.86,
+    "high": 437.36,
+    "low": 426.6,
+    "close": 429.97,
+    "volume": 6096762
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-02T09:49:06",
+    "open": 426.48,
+    "high": 432.74,
+    "low": 420.32,
+    "close": 428.21,
+    "volume": 7085210
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-03T09:49:06",
+    "open": 433.75,
+    "high": 440.55,
+    "low": 426.79,
+    "close": 434.4,
+    "volume": 4636431
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-04T09:49:06",
+    "open": 444.88,
+    "high": 451.7,
+    "low": 443.19,
+    "close": 444.32,
+    "volume": 6185993
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-05T09:49:06",
+    "open": 423.4,
+    "high": 431.38,
+    "low": 419.49,
+    "close": 425.2,
+    "volume": 1641494
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-06T09:49:06",
+    "open": 409.79,
+    "high": 411.66,
+    "low": 403.53,
+    "close": 409.57,
+    "volume": 228672
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-07T09:49:06",
+    "open": 426.96,
+    "high": 433.5,
+    "low": 419.32,
+    "close": 425.67,
+    "volume": 5720180
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-08T09:49:06",
+    "open": 425.15,
+    "high": 431.31,
+    "low": 425.03,
+    "close": 425.47,
+    "volume": 7715022
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-09T09:49:06",
+    "open": 442.97,
+    "high": 450.83,
+    "low": 442.35,
+    "close": 445.71,
+    "volume": 8089307
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-10T09:49:06",
+    "open": 441.08,
+    "high": 441.29,
+    "low": 438.25,
+    "close": 438.92,
+    "volume": 8849575
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-11T09:49:06",
+    "open": 419.4,
+    "high": 420.58,
+    "low": 416.22,
+    "close": 419.95,
+    "volume": 3265391
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-12T09:49:06",
+    "open": 411.5,
+    "high": 417.51,
+    "low": 411.11,
+    "close": 415.2,
+    "volume": 8435852
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-13T09:49:06",
+    "open": 412.75,
+    "high": 414.56,
+    "low": 404.15,
+    "close": 411.74,
+    "volume": 8951244
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-14T09:49:06",
+    "open": 424.44,
+    "high": 430.85,
+    "low": 422.7,
+    "close": 427.43,
+    "volume": 4487207
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-15T09:49:06",
+    "open": 415.54,
+    "high": 420.8,
+    "low": 414.21,
+    "close": 416.65,
+    "volume": 1191781
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-16T09:49:06",
+    "open": 397.66,
+    "high": 401.98,
+    "low": 393.45,
+    "close": 397.25,
+    "volume": 1355842
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-17T09:49:06",
+    "open": 396.18,
+    "high": 400.31,
+    "low": 390.52,
+    "close": 396.16,
+    "volume": 1790383
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-18T09:49:06",
+    "open": 399.12,
+    "high": 403.32,
+    "low": 396.87,
+    "close": 399.37,
+    "volume": 8003657
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-19T09:49:06",
+    "open": 397.74,
+    "high": 404.63,
+    "low": 396.31,
+    "close": 400.78,
+    "volume": 4380381
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-20T09:49:06",
+    "open": 384.83,
+    "high": 390.57,
+    "low": 380.35,
+    "close": 385.92,
+    "volume": 4659063
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-21T09:49:06",
+    "open": 388.29,
+    "high": 392.61,
+    "low": 385.23,
+    "close": 390.16,
+    "volume": 3445253
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-22T09:49:06",
+    "open": 382.53,
+    "high": 386.96,
+    "low": 379.46,
+    "close": 382.82,
+    "volume": 743773
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-23T09:49:06",
+    "open": 393.64,
+    "high": 401.02,
+    "low": 388.99,
+    "close": 393.41,
+    "volume": 5490495
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-24T09:49:06",
+    "open": 389.18,
+    "high": 392.22,
+    "low": 385.94,
+    "close": 389.98,
+    "volume": 6748947
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-25T09:49:06",
+    "open": 404.53,
+    "high": 408.84,
+    "low": 397.43,
+    "close": 406.89,
+    "volume": 8890988
+  },
+  {
+    "ticker": "BHP",
+    "datetime": "2025-07-26T09:49:06",
+    "open": 393.86,
+    "high": 393.86,
+    "low": 393.04,
+    "close": 393.31,
+    "volume": 3545037
+  }
+]

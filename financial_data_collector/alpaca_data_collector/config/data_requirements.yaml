@@ -1,0 +1,137 @@
+# data_requirements.yaml
+# Alpaca Data Collection Requirements
+# Note: Alpaca primarily serves US markets with some international coverage
+
+# US Stocks - Major indices and individual stocks
+ohlcv:
+  us_stocks:
+    # S&P 500 major components for diversification
+    - AAPL    # Apple Inc
+    - MSFT    # Microsoft Corporation  
+    - GOOGL   # Alphabet Inc
+    - AMZN    # Amazon.com Inc
+    - NVDA    # NVIDIA Corporation
+    - TSLA    # Tesla Inc
+    - META    # Meta Platforms Inc
+    - JPM     # JPMorgan Chase & Co
+    - V       # Visa Inc
+    - UNH     # UnitedHealth Group Inc
+    
+  # ASX companies available as ADRs or US listings
+  asx_adrs:
+    - BHP     # BHP Group Limited (US listing)
+    - RIO     # Rio Tinto Limited (US listing)
+    # Add more as available on Alpaca platform
+    
+  # Crypto assets (if enabled)
+  crypto:
+    - BTCUSD  # Bitcoin
+    - ETHUSD  # Ethereum
+    - SOLUSD  # Solana
+    
+  intervals:
+    - daily
+    - hourly    # For intraday analysis
+    
+# Fundamentals data  
+fundamentals:
+  us_stocks:
+    # Same tickers as OHLCV US stocks
+    - AAPL
+    - MSFT
+    - GOOGL
+    - AMZN
+    - NVDA
+    - TSLA
+    - META
+    - JPM
+    - V
+    - UNH
+    
+  asx_adrs:
+    - BHP
+    - RIO
+    
+  fields:
+    - market_cap
+    - pe_ratio
+    - dividend_yield
+    - revenue
+    - net_income
+    - total_assets
+    - debt_to_equity
+    - roe
+    - roa
+    - profit_margin
+
+# Events data
+events:
+  earnings:
+    us_stocks:
+      # Same tickers as OHLCV US stocks
+      - AAPL
+      - MSFT
+      - GOOGL
+      - AMZN
+      - NVDA
+      - TSLA
+      - META
+      - JPM
+      - V
+      - UNH
+      
+    asx_adrs:
+      - BHP
+      - RIO
+      
+  dividends:
+    us_stocks:
+      # Same tickers as OHLCV US stocks
+      - AAPL
+      - MSFT
+      - GOOGL
+      - AMZN
+      - NVDA
+      - TSLA
+      - META
+      - JPM
+      - V
+      - UNH
+      
+    asx_adrs:
+      - BHP
+      - RIO
+      
+  splits:
+    us_stocks:
+      # Same tickers as OHLCV US stocks
+      - AAPL
+      - MSFT
+      - GOOGL
+      - AMZN
+      - NVDA
+      - TSLA
+      - META
+      - JPM
+      - V
+      - UNH
+
+# Market data configuration
+market_data:
+  # Trading hours (US Eastern Time)
+  trading_hours:
+    start: "09:30"
+    end: "16:00"
+    timezone: "America/New_York"
+    
+  # Data quality settings
+  quality_checks:
+    price_variance_threshold: 0.20  # 20% maximum daily price change
+    volume_threshold: 1000          # Minimum daily volume
+    
+# API specific settings
+api_settings:
+  max_bars_per_request: 1000
+  max_symbols_per_request: 200
+  rate_limit_buffer: 0.9  # Use 90% of rate limit to avoid hitting limits
+

@@ -1,0 +1,65 @@
+[
+  {
+    "ticker": "GOOGL",
+    "datetime": "2025-07-20T09:49:06",
+    "open": 110.47,
+    "high": 111.6,
+    "low": 107.94,
+    "close": 109.65,
+    "volume": 6747607
+  },
+  {
+    "ticker": "GOOGL",
+    "datetime": "2025-07-21T09:49:06",
+    "open": 106.12,
+    "high": 107.59,
+    "low": 104.28,
+    "close": 106.19,
+    "volume": 5523971
+  },
+  {
+    "ticker": "GOOGL",
+    "datetime": "2025-07-22T09:49:06",
+    "open": 111.04,
+    "high": 112.35,
+    "low": 108.92,
+    "close": 110.74,
+    "volume": 2036420
+  },
+  {
+    "ticker": "GOOGL",
+    "datetime": "2025-07-23T09:49:06",
+    "open": 106.96,
+    "high": 107.79,
+    "low": 105.84,
+    "close": 106.99,
+    "volume": 5439462
+  },
+  {
+    "ticker": "GOOGL",
+    "datetime": "2025-07-24T09:49:06",
+    "open": 106.21,
+    "high": 107.0,
+    "low": 105.47,
+    "close": 106.12,
+    "volume": 5423234
+  },
+  {
+    "ticker": "GOOGL",
+    "datetime": "2025-07-25T09:49:06",
+    "open": 110.7,
+    "high": 111.1,
+    "low": 109.47,
+    "close": 110.36,
+    "volume": 6877047
+  },
+  {
+    "ticker": "GOOGL",
+    "datetime": "2025-07-26T09:49:06",
+    "open": 114.48,
+    "high": 116.22,
+    "low": 112.89,
+    "close": 114.81,
+    "volume": 190580
+  }
+]
