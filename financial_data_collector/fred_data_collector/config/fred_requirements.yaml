@@ -122,6 +122,36 @@ fred:
       category: "fx"
       frequency: "daily"
       priority: "medium"
+      
+    # 🇨🇳 CHINESE ECONOMIC INDICATORS (Trading Partner Context)
+    
+    - indicator: INTDSRCNM193N
+      name: "China Interest Rate" 
+      description: "Interest Rates, Discount Rate for China"
+      category: "cn_monetary"
+      frequency: "monthly"
+      priority: "medium"
+      
+    - indicator: CHNCPIALLMINMEI
+      name: "China Consumer Price Index"
+      description: "Consumer Price Index: Total for China" 
+      category: "cn_inflation"
+      frequency: "monthly"
+      priority: "medium"
+      
+    - indicator: MKTGDPCNA646NWDB
+      name: "China Gross Domestic Product"
+      description: "Gross Domestic Product for China"
+      category: "cn_growth"
+      frequency: "annual"
+      priority: "medium"
+      
+    - indicator: NYGDPPCAPKDCHN
+      name: "China GDP per Capita"
+      description: "GDP per capita for China"
+      category: "cn_growth" 
+      frequency: "annual"
+      priority: "medium"
 
   # COLLECTION CONFIGURATION
   collection:
@@ -158,11 +188,15 @@ fred:
     us_monetary: "US Federal Reserve policy"
     us_labour: "US employment statistics"
     us_growth: "US economic growth indicators"
+    cn_inflation: "Chinese inflation and price measures"
+    cn_monetary: "Chinese monetary policy indicators"
+    cn_growth: "Chinese economic growth indicators"
     fx: "Foreign exchange rates"
     
   # STATUS
-  status: "fixed"
-  last_updated: "2025-07-20"
-  total_indicators: 15
-  coverage: "Australian (10) + US (4) + Global (1)"
-  fixes_applied: "Replaced 5 invalid indicator codes with verified working codes" 
+  status: "enhanced"
+  last_updated: "2025-08-02"
+  total_indicators: 19
+  coverage: "Australian (10) + US (4) + Chinese (4) + Global (1)"
+  fixes_applied: "Replaced 5 invalid indicator codes with verified working codes"
+  enhancements: "Added 4 Chinese economic indicators for trading partner analysis" 

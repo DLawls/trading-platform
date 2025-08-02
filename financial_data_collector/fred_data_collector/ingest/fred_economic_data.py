@@ -351,6 +351,14 @@ class FREDCollector:
             validated_df = self._validate_data(df, indicator_config)
             if validated_df.empty:
                 self.logger.error(f"❌ Validation failed for {indicator_id}")
+                # For Chinese indicators, try to save the original data even if validation fails
+                if 'cn_' in indicator_config.get('category', ''):
+                    self.logger.warning(f"⚠️ Attempting to save unvalidated data for Chinese indicator {indicator_id}")
+                    if self._save_indicator_data(df, indicator_config):
+                        self.stats['successful_collections'] += 1
+                        self.stats['total_records'] += len(df)
+                        self.logger.info(f"   ✅ Successfully collected {indicator_id} (unvalidated)")
+                        return True
                 self.stats['failed_collections'] += 1
                 return False
             

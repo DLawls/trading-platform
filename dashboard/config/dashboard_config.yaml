@@ -1,0 +1,258 @@
+# AI Trading Platform Dashboard Configuration
+# Complete system monitoring for Module 1+ future modules
+
+dashboard:
+  title: "🤖 AI Trading Platform Dashboard"
+  subtitle: "Comprehensive Market & Economic Monitoring"
+  version: "2.0"
+  refresh_interval: 30  # seconds
+  
+  # Main navigation structure
+  navigation:
+    - id: "overview"
+      title: "📊 System Overview"
+      icon: "📊"
+      description: "Overall system health and key metrics"
+      
+    - id: "macro"
+      title: "🌍 Macro Indicators"
+      icon: "🌍"
+      description: "Economic indicators and market context"
+      
+    - id: "companies"
+      title: "🏢 ASX 50 Companies"
+      icon: "🏢"
+      description: "Company-specific financial data"
+      
+    - id: "operations"
+      title: "⚙️ System Operations"
+      icon: "⚙️"
+      description: "Data collection monitoring and health"
+
+# MACRO INDICATORS GROUP
+# All non-company specific economic and market data
+macro_indicators:
+  
+  # Australian Economic Data (Primary Focus)
+  australian_economy:
+    title: "🇦🇺 Australian Economy"
+    priority: "high"
+    
+    # From FRED API
+    fred_indicators:
+      inflation:
+        - indicator: "CPALTT01AUQ657N"
+          name: "Australia CPI"
+          description: "Consumer Price Index (Quarterly)"
+          
+        - indicator: "CORESTICKM159SFRBATL" 
+          name: "Australia Core CPI"
+          description: "Core Consumer Price Index (Monthly)"
+          
+      labour:
+        - indicator: "LRHUTTTTAUM156S"
+          name: "Australia Unemployment Rate"
+          description: "Unemployment Rate (Monthly)"
+          
+        - indicator: "LRHU24TTAUM156S"
+          name: "Australia Youth Unemployment"
+          description: "Youth Unemployment Rate (Monthly)"
+          
+      monetary:
+        - indicator: "IR3TIB01AUM156N"
+          name: "Australia 3M Interest Rate"
+          description: "3-Month Interbank Rate (Monthly)"
+          
+        - indicator: "IRLTLT01AUM156N"
+          name: "Australia 10Y Bond Rate"
+          description: "10-Year Government Bond Yield (Monthly)"
+          
+      growth:
+        - indicator: "NGDPRSAXDCAUQ"
+          name: "Australia Real GDP"
+          description: "Real Gross Domestic Product (Quarterly)"
+          
+        - indicator: "NYGDPPCAPKDAUS"
+          name: "Australia GDP per Capita"
+          description: "Real GDP per Capita (Annual)"
+          
+      trade:
+        - indicator: "AUSBCABP6USD"
+          name: "Australia Current Account"
+          description: "Current Account Balance (Annual)"
+          
+        - indicator: "DEXUSAL"
+          name: "USD/AUD Exchange Rate"
+          description: "Exchange Rate (Daily)"
+    
+    # From ABS (Australian Bureau of Statistics)
+    abs_indicators:
+      national_accounts:
+        - name: "GDP Chain Volume Measures"
+          category: "growth"
+          
+      prices:
+        - name: "Consumer Price Index"
+          category: "inflation"
+        - name: "Producer Price Indexes"
+          category: "inflation"
+        - name: "Wage Price Index"
+          category: "labour"
+          
+      labour:
+        - name: "Employed Persons"
+          category: "labour"
+        - name: "Participation Rate" 
+          category: "labour"
+        - name: "Job Vacancies"
+          category: "labour"
+          
+      trade:
+        - name: "Balance on Goods"
+          category: "trade"
+        - name: "Current Account Balance"
+          category: "trade"
+        - name: "Total Goods Credits"
+          category: "trade"
+        - name: "Total Goods Debits"
+          category: "trade"
+          
+      business:
+        - name: "Retail Turnover"
+          category: "consumption"
+        - name: "Capital Expenditure"
+          category: "investment"
+        - name: "Company Gross Operating Profits"
+          category: "business"
+  
+  # US Economic Reference Data
+  us_economy:
+    title: "🇺🇸 US Reference Data"
+    priority: "medium"
+    
+    indicators:
+      - indicator: "FEDFUNDS"
+        name: "US Federal Funds Rate"
+        description: "Federal Reserve Policy Rate (Monthly)"
+        
+      - indicator: "CPIAUCSL"
+        name: "US CPI"
+        description: "Consumer Price Index (Monthly)"
+        
+      - indicator: "UNRATE"
+        name: "US Unemployment Rate"
+        description: "Unemployment Rate (Monthly)"
+        
+      - indicator: "GDP"
+        name: "US GDP"
+        description: "Gross Domestic Product (Quarterly)"
+  
+
+
+# COMPANY-SPECIFIC INDICATORS GROUP  
+# All ASX 50 company data
+company_indicators:
+  
+  asx_50:
+    title: "📈 ASX 50 Companies"
+    universe_size: 50
+    
+    # Market Data
+    market_data:
+      ohlcv:
+        - name: "Open, High, Low, Close, Volume"
+          frequency: "daily"
+          description: "Daily price and volume data"
+          
+      market_cap:
+        - name: "Market Capitalization"
+          frequency: "real_time"
+          description: "Current market value"
+    
+    # Financial Fundamentals
+    fundamentals:
+      profitability:
+        - field: "revenue"
+          name: "Total Revenue"
+          description: "Company total revenue"
+          
+        - field: "net_income"
+          name: "Net Income"
+          description: "Bottom-line profit"
+          
+        - field: "eps"
+          name: "Earnings Per Share"
+          description: "Profit per share"
+          
+      valuation:
+        - field: "pe_ratio"
+          name: "P/E Ratio"
+          description: "Price-to-earnings valuation"
+          
+      balance_sheet:
+        - field: "total_assets"
+          name: "Total Assets"
+          description: "Company total assets"
+          
+        - field: "debt_to_equity"
+          name: "Debt-to-Equity"
+          description: "Financial leverage ratio"
+    
+    # Corporate Events
+    events:
+      earnings:
+        - name: "Earnings Announcements"
+          frequency: "quarterly"
+          description: "Quarterly earnings releases"
+          
+      dividends:
+        - name: "Dividend Payments"
+          frequency: "semi_annual"
+          description: "Dividend distributions"
+          
+      corporate_actions:
+        - name: "Stock Splits"
+          frequency: "ad_hoc"
+          description: "Share adjustment events"
+
+# Data source mapping
+data_sources:
+  yahoo_finance:
+    type: "api"
+    status: "active"
+    coverage: "ASX 50 companies"
+    data_types: ["ohlcv", "fundamentals", "events"]
+    
+  fred_economic:
+    type: "api" 
+    status: "active"
+    coverage: "19 economic indicators (10 AU + 4 US + 4 CN + 1 Global)"
+    data_types: ["economic"]
+    
+  abs_australian:
+    type: "web_scraping"
+    status: "active"
+    coverage: "36 Australian indicators"
+    data_types: ["economic"]
+    
+  alpaca_premium:
+    type: "api"
+    status: "active"
+    coverage: "US + Crypto reference"
+    data_types: ["ohlcv", "crypto"]
+
+# UI Theme
+theme:
+  colors:
+    primary: "#1f77b4"
+    success: "#28a745"
+    warning: "#ffc107"
+    error: "#dc3545"
+    info: "#17a2b8"
+    macro: "#9467bd"      # Purple for macro indicators
+    company: "#ff7f0e"    # Orange for company indicators
+    
+  layout:
+    sidebar_width: 300
+    chart_height: 400
+    table_page_size: 25 
